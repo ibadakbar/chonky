@@ -24,10 +24,10 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "GENERATE_SOURCEMAP=false && npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
